@@ -643,15 +643,21 @@ export class DefaultTheme {
   public static modalPaddingLeft = '32px';
   public static modalPaddingRight = '36px';
   public static modalHeaderFontSize = '24px';
+  public static modalHeaderFontWeight = '400';
   public static get modalHeaderTextColor() {
     return this.textColorDefault;
   }
   public static modalHeaderLineHeight = '32px';
   public static modalHeaderPaddingBottom = '16px';
   public static modalHeaderPaddingTop = '24px';
+  public static modalFixedHeaderMarginBottom = '10px';
   public static get modalFixedHeaderPaddingBottom() {
     return `${Math.round(parseInt(this.modalHeaderPaddingBottom) / 2)}px`;
   }
+  public static modalFixedFooterPaddingTop = '20px';
+  public static modalFixedFooterMarginTop = '10px';
+
+  public static modalSeparatorBorderBottom = 'none';
   public static modalBodyTextColor = 'inherit';
   public static modalFooterTextColor = 'inherit';
   public static modalBodyPaddingBottom = '24px';
@@ -977,6 +983,7 @@ export class DefaultTheme {
   //menuSeparator
   public static menuSeparatorBorderColor = '#ebebeb';
   public static menuSeparatorMarginY = '2px';
+  public static menuSeparatorMarginX = '0px';
   public static menuSeparatorBorderWidth = '1px';
   //#endregion
   //#region Toggle
@@ -1221,6 +1228,10 @@ export class DefaultTheme {
   public static get checkboxBorderWidth() {
     return this.controlBorderWidth;
   }
+  public static checkboxIconHeight = '16px';
+  public static checkboxIconWidth = '16px';
+  public static checkboxIconTop = '0px';
+  public static checkboxIconLeft = '0px';
   public static get checkboxShadow() {
     return `0 0 0 ${this.checkboxBorderWidth} rgba(0, 0, 0, 0.15)`;
   }

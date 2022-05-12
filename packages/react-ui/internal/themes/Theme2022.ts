@@ -6,6 +6,8 @@ export class Theme2022 extends (class {} as typeof DefaultThemeInternal) {
   public static linkColor = '#3D3D3D';
   public static linkActiveColor = '#141414';
 
+  public static borderColorFocus = '#141414';
+
   public static bgActive = '#141414';
 
   public static btnPrimaryBg = '#3D3D3D';
@@ -41,9 +43,25 @@ export class Theme2022 extends (class {} as typeof DefaultThemeInternal) {
   public static inputBorderRadiusMedium = '2px';
   public static inputBorderRadiusLarge = '2px';
 
+  public static textareaBorderRadius = '2px';
+
+  public static radioBulletSize = '6px';
+
+  public static checkboxBorderRadius = '4px';
+  public static checkboxIconHeight = '12px';
+  public static checkboxIconWidth = '12px';
+  public static checkboxIconTop = '2px';
+  public static checkboxIconLeft = '2px';
+
+  public static menuSeparatorMarginX = '8px';
+
   public static tooltipBorderRadius = '8px';
 
   public static popupBorderRadius = '8px';
+  public static popupBoxShadow = '0px 4px 16px 0px rgba(0, 0, 0, 0.08)';
+  public static popupDropShadow = 'drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.08))';
+
+  public static pickerShadow = '0px 4px 16px 0px rgba(0, 0, 0, 0.08)';
 
   public static toastBorderRadius = '8px';
 
@@ -52,8 +70,21 @@ export class Theme2022 extends (class {} as typeof DefaultThemeInternal) {
   public static modalBorderRadius = '16px';
   public static fixedPanelShadow = 'none';
   public static modalFooterBg = '#fff';
-  public static modalFixedHeaderBorder = '1px solid #EBEBEB';
-  public static modalFixedFooterBorder = '1px solid #EBEBEB';
+  // public static modalFixedHeaderBorder = '1px solid #EBEBEB';
+  // public static modalFixedFooterBorder = '1px solid #EBEBEB';
+  public static modalFooterPaddingTop = '20px';
+  public static modalFooterPaddingBottom = '20px';
+  public static modalFixedHeaderMarginBottom = '0px';
+  public static get modalFixedHeaderPaddingBottom() {
+    return this.modalHeaderPaddingBottom;
+  }
+  public static get modalFixedFooterPaddingTop() {
+    return this.modalFooterPaddingTop;
+  }
+  public static modalFixedFooterMarginTop = '0px';
+  public static modalSeparatorBorderBottom = '1px solid #EBEBEB';
+  public static modalHeaderFontWeight = '700';
+  public static modalPaddingRight = '32px';
 
   public static checkboxCheckedBg = '#3D3D3D';
 
@@ -63,6 +94,7 @@ export class Theme2022 extends (class {} as typeof DefaultThemeInternal) {
   public static menuItemHoverColor = '#222';
   public static menuItemBorderRadius = '6px';
   public static menuItemCommentColorHover = '#858585';
+  public static menuShadow = '0px 4px 16px 0px rgba(0, 0, 0, 0.08)';
 
   public static fileUploaderBorderRadius = '8px';
   public static fileUploaderLinkHoverTextDecoration = 'none';
